@@ -85,10 +85,10 @@ export default function Bets() {
     };
   }, []);
   return (
-        <>
+        <div>
           <IndexNavbar />
-          <div className="wrapper">
-            <h1 className="main" style={{marginLeft:"20%"}}>Organize Bet</h1>
+          <div className="container row">
+            <h1 className="main" style={{marginLeft:"20%"}}>Place Bet</h1>
             <div className="page-header header-filter">
               <div className="squares square1" />
               <div className="squares square2" />
@@ -107,8 +107,8 @@ export default function Bets() {
                 </div>
               </Container>
             </div>
+            </div>
             <Footer />
-          </div>
-        </>
+        </div>
   );
 }

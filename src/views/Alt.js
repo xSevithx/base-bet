@@ -85,7 +85,7 @@ export default function Alt() {
     };
   }, []);
   return (
-        <>
+        <div>
           <IndexNavbar />
           <div className="wrapper">
             <div className="page-header header-filter">
@@ -108,6 +108,6 @@ export default function Alt() {
             </div>
             <Footer />
           </div>
-        </>
+        </div>
   );
 }

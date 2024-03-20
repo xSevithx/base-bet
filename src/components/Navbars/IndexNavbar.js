@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useWeb3 } from '../../contexts/Web3Context.js'; // Adjust the import path as necessary
-
 import {  Button,  Collapse,  DropdownToggle,  DropdownMenu,  DropdownItem,  UncontrolledDropdown,  NavbarBrand,  Navbar,  NavItem,  NavLink,  Nav,  Container,  Row,  Col,  UncontrolledTooltip,} from "reactstrap";
 
 export default function IndexNavbar() {
@@ -44,8 +43,8 @@ export default function IndexNavbar() {
   const shortenAddress = (address) => `${address.slice(0, 6)}...${address.slice(-4)}`;
 
   return (
-    <>
-    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+    <div className="container">
+    <Navbar style={{position:"absolute"}} className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
@@ -134,8 +133,8 @@ export default function IndexNavbar() {
       </Container>
     </Navbar>
     <Container style={{height:"80px"}} >
-
     </Container>
-    </>
+
+    </div>
   );
 }
